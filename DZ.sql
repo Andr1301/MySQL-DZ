@@ -19,13 +19,11 @@ BEGIN
     DECLARE h INT DEFAULT 0;
 	DECLARE m INT DEFAULT 0;
 	DECLARE s INT DEFAULT 0;
-	DECLARE x INT DEFAULT 0;
     
     SET d = num DIV 86400;
     SET h = num%86400;
     
 	SET m = h%3600;
-	SET x = h%3600;
     SET h = h DIV 3600;
     
 	SET s = m%60;
